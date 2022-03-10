@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Resources/images/download.png">
+    <link rel="stylesheet" href="./assets/loginstyle.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/css/all.css">
+    <link rel="stylesheet" href="../assets/css/hamburger.css">
+    <title>Account Login</title>
+</head>
+<body>
+
+
+    <div class="container flex">
+    
+        <div class="top">
+             <h2 class="title"> <a href="../index.html">AASTU GEBETA.</h2></a>
+
+        </div>
+    
+    </div>
+
+
+
+<!-- partial:index.partial.html -->
+<div class="form-structor">
+	<div class="signup">
+		<h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+		<div class="form-holder">
+            <div class="userIcon">
+                <span><i class="fas fa-user-alt"></i></span><input type="text" class="input" placeholder="Name" />    
+            </div>
+		
+            <div class="userIcon">
+                <span><i class="fas fa-mail-bulk"></i></span>  <input  type="email" class="input" placeholder="Email" />
+            </div>
+
+            <div class="userIcon">
+                <span><i class="fas fa-key" id="Picon"></i></span>   <input type="password" class="input" placeholder="Password" />
+            </div>
+
+            <div class="userIcon">
+                <span><i class="fas fa-key" id="Picon"></i></span>  <input type="password" class="input" placeholder="Confirm Password" />
+            </div>
+		</div>
+        
+		<button class="submit-btn">Sign up</button>
+	</div>
+
+	
+	<div class="login slide-up">
+		<div class="center">
+			<h2 class="form-title" id="login"><span>or</span>Log in</h2>
+			<div class="form-holder">
+		
+                <div class="userIcon">
+                    <span><i class="fas fa-mail-bulk"></i></span>  <input type="email" class="input" placeholder="Email" />
+                </div>
+    
+                <div class="userIcon">
+                    <span><i class="fas fa-key" id="Picon"></i></span>   <input type="password" class="input" placeholder="Password" />
+                </div>
+			</div>
+			<button class="submit-btn" >Log in</button>
+		
+      <a href="#">Forgot password?</a>
+
+      
+		</div>
+	</div>
+</div>
+<!-- partial -->
+
+<div class="desktop">
+
+
+<section class="user">
+    <div class="user_options-container">
+      <div class="user_options-text">
+        <div class="user_options-unregistered">
+          <h2 class="user_unregistered-title">Don't have an account?</h2>
+      
+          <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+        </div>
+  
+        <div class="user_options-registered">
+          <h2 class="user_registered-title">Have an account?</h2>
+          <button class="user_registered-login" id="login-button">Login</button>
+        </div>
+      </div>
+      
+      <div class="user_options-forms" id="user_options-forms">
+        <div class="user_forms-login">
+          <h2 class="forms_title">Login</h2>
+          <form class="forms_form">
+           
+              <div class="forms_field">
+                <div class="userIcon">
+                    <span><i class="fas fa-mail-bulk"></i></span>  <input id="emailLog" type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                </div>
+              </div>
+
+              <div class="logErrorEmail">
+         
+              </div>
+
+              <div class="forms_field">
+             <div class="userIcon">
+                <span><i class="fas fa-key" ></i></span> <input id="passLog" type="password" placeholder="Password" class="forms_field-input" required />
+            </div>
+              </div>
+
+              <div class="logErrorPass">
+                
+              </div>
+
+              
+  
+            <div class="forms_buttons">
+              <button type="button" class="forms_buttons-forgot">Forgot password?</button>
+              <input type="submit" value="Log In" class="forms_buttons-action" id="loginDesktop">
+            </div>
+          </form>
+        </div>
+        <div class="user_forms-signup">
+          <h2 class="forms_title">Sign Up</h2>
+          <form class="forms_form">
+            
+              <div class="forms_field">
+            <div class="userIcon">
+                <span><i class="fas fa-user-alt"></i></span>  <input type="text" placeholder="Full Name" class="forms_field-input" id="userDesk" required />
+            </div>
+              </div>
+              <div class="forms_field">
+                <div class="userIcon">
+                    <span><i class="fas fa-mail-bulk"></i></span>  <input id="signEmail" type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                </div>
+              </div>
+
+              <div class="sameEmail">fdgh</div>
+              <div class="forms_field">
+                <div class="userIcon">
+                    <span><i class="fas fa-key" ></i></span> <input id="signPass" type="password" placeholder="Password" class="forms_field-input" required />
+                </div>
+              </div>
+
+              <div class="signWeak"></div>
+
+              <div class="forms_field">
+                <div class="userIcon">
+                    <span><i class="fas fa-key" ></i></span> <input id="signPassCheck" type="password" placeholder="Confirm Password" class="forms_field-input" required />
+                </div>
+              </div>
+
+              <div class="error">
+                
+              </div>
+        
+            <div class="forms_buttons">
+              <input  value="Sign up" type="submit" class="forms_buttons-action" id="signDesktop">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partial -->
+
+</div>
+
+    <script  src="./assets/loginstyle.js"></script>
+  
+<script src="../assets/js/ham.js"></script>
+
+  <script  src="./assets/login.js"></script>
+  <script src="./assets/validate.js"></script>
+
+
+</body>
+</html>

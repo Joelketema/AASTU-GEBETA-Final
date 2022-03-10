@@ -1,0 +1,530 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root
+{
+    --primary-color: #377fad
+}
+
+body{
+    font-family: poppins;
+}
+
+html
+{
+    overflow-x: hidden;
+}
+
+h2
+{
+    color: black;
+}
+
+
+@media (min-width: 100px)
+{
+
+
+    .mainContainer
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .topPart
+    {
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+        margin-top: 20%;
+    }
+    .searchBar
+    {
+        width: max-content;
+        border-radius: 25px;
+        padding-left: 10px;
+    }
+
+    .searchBar input 
+    {
+        border: 0;
+        border-bottom: 1px solid #377fad;
+        padding: 7px;
+        font-size: medium;
+    }
+
+    /*filter content*/
+
+    .filterContent
+    {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 15px;
+        background-color: white;
+       position: fixed;
+        margin: 150px 20px;
+        padding: 30px 30px;
+        transform: translateY(-100px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 300ms ease-in;
+    }
+
+    .filterContent.active
+    {
+        transform: translateY(-40px);
+        pointer-events: all;
+        z-index: 10;
+        opacity: 1;
+    }
+
+    .filterContent .drink
+    {
+        padding-left: 50px;
+    }
+
+    .filterContent .filterTitle
+    {
+        padding-bottom: 10px;
+    }
+    .filterContent ul
+    {
+        padding: 10px 0;
+        margin: 0 15px;
+    }
+
+    /*content*/
+
+    .contentsAvailable
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+    }
+
+    .contentTitle
+    {
+        padding: 10px 0;
+        font-size: large;
+        font-weight: bold;
+    }
+    .actualContent
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+
+    .borderOfItem
+    {
+        border: 1px solid black;
+        background-color: #ccc;
+        margin: 15px 0;
+
+    }
+
+    .item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .itemImage
+    {
+        margin-top: 20px;
+        min-width: 100px;
+        max-width: 300px;
+        min-height: 200px;
+        overflow: hidden;
+       
+        position: relative;
+        border-radius: 15px;
+    }
+    .itemImage img
+    {
+        position: relative;
+        z-index: 0;
+        width: 250px;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all ease 200ms;
+        
+    }
+
+    #DrinksItem img
+    {
+        transform: scale(0.8);
+        margin-top: -60px;
+    }
+
+    .itemImage img:hover, #DrinksItem img:hover
+    {
+        transform: scale(1.1);
+    }
+
+
+    .itemDescribe
+    {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 50px;
+        margin-top: 10px;
+    }
+
+    .borderOfItem
+    {
+        background-color: white;
+        color: white;
+        box-shadow: 0 5px 5px grey;
+        width: 300px;
+        border-radius: 25px;
+        border: 0;
+        padding-bottom: 10px;
+    }
+    .borderOfItem .fas
+    {
+        border: 1px solid white;
+        padding: 6px;
+       margin-bottom: 5px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 3px 3px grey;
+        background-color: white;
+        transition: all ease 200ms;
+    }
+
+    .borderOfItem .fa-question-circle
+    {
+        margin-left: 7px;
+    }
+    .clear
+    {
+        width: 20px;
+        margin-left: -10px;
+        transform: scale(0);
+        transition: all ease 300ms;
+    }
+
+    .clear.active
+    {
+        transform: scale(1);
+    }
+
+
+    .cart
+    {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .topNumber
+    {
+        border: 1px solid white;
+        padding: 5px;
+        position: absolute;
+        text-align: center;
+        background-color: #377fad;
+        color: white;
+        font-family: poppins;
+        margin-top: -1%;
+        margin-left: -0.2%;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .itemDescribe:nth-child(1), .itemDescribe:nth-child(2)
+    {
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .itemDescribe p,.itemDescribe h4
+    {
+        margin-bottom: 5px;
+    }
+
+
+    .notify
+    {
+        position: fixed;
+        text-align: center;
+        box-shadow: 0 5px 5px grey;
+        transform: translateX(200px);
+        border-radius: 15px;
+        background-color: white;
+        color: black;
+        padding: 15px;
+        top: 50%;
+        right: 0;
+        width: 50%;
+        transition: all ease 400ms;
+    }
+    .notify.active
+    {
+        transform: translateX(0);
+    }
+
+    
+    .food
+    {
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .searchResults
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 300ms ease;
+    }
+
+    .foundContent
+    {
+        align-self: center;
+        margin-left: 20px;
+    }
+
+
+}
+
+@media(min-width:550px)
+{
+    .topPart
+    {
+        justify-content: space-around;
+        margin-top: 15%;
+    }
+    /*filter content*/
+
+    .filterContent
+    {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        border-radius: 15px;
+        background-color: white;
+        padding: 10px 0;
+        margin: 200px 250px;
+        width: 50%;
+        z-index: 1;
+     
+    }
+
+    .filterContent .filterTitle
+    {
+        padding-bottom: 10px;
+    }
+    .filterContent ul
+    {
+        padding: 10px 0;
+        margin: 0 15px;
+    }
+    .actualContent
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        padding-left: 150px;
+    }
+
+    .notify{
+        transform: translateX(400px);
+    }
+
+    .notify.active
+    {
+        transform: translateX(500px);
+    }
+}
+
+
+@media(min-width:900px)
+{
+    .searchBar
+    {
+        width: 50%;
+    }
+    .bar
+    {
+        width: 80%;
+    }
+    .topPart
+    {
+        justify-content: space-around;
+        margin-top: 9%;
+    }
+    .filterBar
+    {
+        cursor: pointer;
+    }
+    .cart
+    {
+        cursor: pointer;
+        margin-left: 150px;
+        margin-top: -25px;
+    }
+    .searchBar input
+    {
+        width: 80%;
+    }
+
+    .filterContent
+    {
+        margin: 200px 450px;
+        padding: 50px 0;
+        position: fixed;
+    }
+
+    ul li 
+    {
+        cursor: pointer;
+    }
+    .fa-star
+    {
+        cursor: pointer;
+        color: black;
+    }
+    .fa-plus-circle:hover,.fa-circle-minus:hover
+    {
+        color: #377fad;
+        cursor: pointer;
+    }
+    .actualContent
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:80px;
+        padding-left: 70px;
+    }
+
+    .contentTitle
+    {
+        padding: 20px 0;
+        font-size: large;
+    }
+
+
+    .itemImage
+    {
+        margin-top: 20px;
+        width: 350px;
+       
+        height:250px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+    }
+    .itemImage img
+    {
+        position: relative;
+        z-index: 0;
+        width: 300px;
+        margin-left: -10px;
+        transform: scale(1.2);
+        padding: 10px 0;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .borderOfItem
+    {
+        color: black;
+        width: 300px;
+        border-radius: 25px;
+        border: 0;
+        padding-bottom: 10px;
+    }
+    
+
+    .clear
+    {
+        cursor: pointer;
+        width: 15px;
+    
+    }
+
+    .itemImage
+    {
+
+         min-width: 200px;
+         min-height: 100px;
+         text-align: center;
+    }
+
+
+
+    .borderOfItem .fas:hover
+    {
+        background-color: #ccc;
+
+    }
+
+    .borderOfItem .fas
+    {
+        cursor: pointer;
+    }
+
+    .notify
+    {
+        position: fixed;
+        text-align: left;
+        box-shadow: 0 5px 5px grey;
+        transform: translateX(400px);
+        border-radius: 15px;
+        background-color: white;
+        color: black;
+        padding: 15px;
+        top: 50%;
+        right: 0;
+        width: 25%;
+        transition: all ease 400ms;
+    }
+    .notify.active
+    {
+        transform: translateX(100px);
+    }
+    
+    #actualContentDrink img
+    {
+        transform: scale(0.65);
+        margin-top: -80px;
+    }
+    #actualContentDrink img:hover
+    {
+        transform: scale(0.8);
+      
+    }
+
+    .filterTitle
+    {
+        cursor: pointer;
+   
+    }
+
+    .foundContent
+    {
+        margin-left: 120px;
+    }
+    /*hover down*/
+
+
+}

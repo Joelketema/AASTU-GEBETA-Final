@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU GEBETA</title>
+    <link rel="icon" href="./Resources/images/download.png">
+    <link rel="stylesheet" href="./assets/css/food.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/css/all.css">
+    <link rel="stylesheet" href="./assets/css/hamburger.css">
+    <link rel="stylesheet" href="./account/assets/style.css">
+    <link rel="stylesheet" href="./assets/css/pro/css/all.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+</head>
+<body>
+
+    <div class="container flex">
+
+        <div class="top">
+             <h2 class="title"> <a href="home.html"> AASTU GEBETA.</h2></a>
+             
+             <div class="ham icon nav-icon-5">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+       
+        <nav class="navigation">
+            <ul>
+                <a href="home.html" id="home" > <li><i class="fas fa-home"></i>Home</li></a>
+                <a href="foods.html" id="food"><li><i class="fas fa-hamburger"></i>Food and Drinks</li></a>
+                <a href="./Lounges/lounges.html" id="lounge"><li><i class="fas fa-warehouse"></i>Lounges</a> 
+                <a href="home.html#aboutt" id="about"><li><i class="fas fa-question-circle"></i>About Us</li></a>   
+             </ul>
+        </nav>
+
+        <a href="./account/profile.html">  <a href="./account/profile.html"> <img title="Profile" src="./Resources/images/uu.png" style="margin-top: 14px" id="acc" alt="" srcset="" width="40px"></a> </a>
+        
+    </div>
+</div>
+    
+<div class="mainContainer">
+    <div class="topPart">
+        <div class="searchBar">
+            <input type="text" class="bar" placeholder="Search For an Item"> 
+            <span><img src="./Resources/images/icons8-close.svg" class="clear"alt="" srcset=""></span>
+            <div class="fas fa-search"></div>
+        </div>
+
+        <div class="filterCart">
+        <div class="filterBar">
+            <i class="fas fa-bars-filter"></i> <span>Filter</span>
+        </div>
+
+        <div class="cart"> 
+            
+            <img src="./Resources/images/bag.png" width="30px" alt="" srcset=""><sup class="topNumber">0</sup>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="filterContent">
+        <div class="food">
+            <h3 class="filterTitle">Food</h3>
+            <h4 id="type">Type</h4>
+    
+            <ul>
+                <li id="Traditional">Traditional Food</li>
+                <li id="Fast">Fast Food</li>
+            </ul>
+            <h4 id="price">Price</h4>
+            <ul>
+                <li id="25">20birr-25birr</li>
+                <li id="30">25birr-30birr</li>
+            </ul>
+            <h4 id="loungeFood">Lounge</h4>
+            <ul>
+                <li id="Kibnesh">Kibnesh Lounge</li>
+                <li id="KK">KK Lounge</li>
+            </ul>
+        </div>
+
+        <div class="drink">
+            <h3 class="filterTitle">Drink</h3>
+            <h4 id="type">Type</h4>
+            <ul>
+              
+                <li id="Soft">Soft Drinks</li>
+                <li id="Hot">Hot Drinks</li>
+                <li id="Energy">Energy Drinks</li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    
+    <!--PAYMENT CODE-->
+
+
+    <form class="modal" id="pop">
+
+        <div class="orders">
+    
+        <div class="pendingBtn">
+            <label class="pending">Pending Orders</label> 
+            <i class="fas fa-close" id="delMain"></i> 
+        </div>
+    
+            <div class="toppart">
+                <img src="./Resources/images/shopping.svg" alt="" class="holder">
+            </div>
+    </div>
+    
+        <div class="information">
+    
+        <div class="options">
+    
+        <caption>Pick an Options</caption>
+        <div class="Indelivery"> 
+             <input type="radio" name="options" class="Delivery"><label>Delivery</label>   
+        </div>
+    
+        <div class="inLounge">
+             <input type="radio" name="options" class="lounge"><label>In Lounge</label>
+        </div>
+
+        <div class="pickTime">
+            <input type="time" name="" id="">
+        </div>
+       
+        <div class="fillData">
+            <input type="number" name="" id="block" min="0" max="50" placeholder="Block">
+            <input type="number" name="" id="dorm" min="0" max="300" width="20px" placeholder="Dorm">
+           <div class="gen">
+            <input type="radio" name="gender" id="genderInput1"> <span id="male"> Male </span>
+            <input type="radio" name="gender" id="genderInput2"> <span id="female">Female</span>
+        </div>
+        </div>
+    
+        </div>
+          
+    
+        <div class="payment">
+                
+        <caption>Pay With</caption> 
+        <div class="Indelivery"> 
+        <input type="radio" name="options2" class="Delivery"><label>CBE</label>
+        </div>   
+    
+        <div class="Indelivery"> 
+        <input type="radio" name="options2" class="lounge"><label>TeleBirr</label>  
+        </div>
+    
+        <div class="Indelivery"> 
+        <input type="radio" name="options2" class="lounge"><label>Yene Birr</label> 
+        </div>
+        
+        <div class="Indelivery"> 
+        <input type="radio" name="options2" class="lounge"><label>M-Birr</label>   
+        </div> 
+
+ 
+        </div>
+    </div>
+        <button class="btnModal" id="nextBtn">Next</button>   
+    </form>
+
+
+    <div class="credit">
+        <div class="paymentTop">
+             <h3>Payment Information</h3>
+             <i class="fas fa-close" id="closeCredit"></i> 
+        </div>
+
+        <div class="creditSvg">
+            <div class="userNameCredit"></div>
+            <div class="amountOFFood"></div>
+            <div class="totalPrice"></div>
+            <div class="agree">
+                <input type="checkbox" name="" id="agree"><label for="agree">I agree to the terms and policies</label>
+            </div>
+
+        </div>
+        
+
+
+    </div>
+
+    <div class="smallPop">
+
+        <div class="firstModal">
+            <div class="foodImage">
+                    
+                <img src="./Resources/images/beya.jpg" class="foodSelectedImage" alt="" width="200px">
+                     
+            </div>
+        </div>
+
+        <div class="secondModal">
+            <div class="smallSecond">
+                <i class="fas fa-close" id="smallDel"></i>
+                <p class="food">Food Name: <span class="foodSelectedTitle"> Bantao </span> </p>
+                <p class="food">Food Details: <span class="foodSelectedDescribe"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, consectetur. </span> </p>
+                <p class="food">Lounge: <span class="loungeSelected"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, consectetur. </span> </p>
+                <button id="wishList">Add to wishList</button>
+            </div>
+        </div>
+    
+    </div>
+        
+    <div class="overlay"></div>
+
+
+    <div class="bothAvail">
+           
+    <div class="contentsAvailable">
+        <div class="contentTitle" id="foodTitleId">Foods Available</div>
+        <div class="actualContent"id="actualContentFood" > 
+
+        </div>
+  
+    </div>
+
+    <div class="contentsAvailable" id="contentAvailDrink">
+        <div class="contentTitle" id="drinkTitleId">Drinks Available</div>
+        <div class="actualContent" id="actualContentDrink">
+     </div>
+  
+    </div>
+    </div>
+
+    <div class="searchResults contentsAvailable">
+        <div class="contentTitle" id="searchTitle" >Search Results</div>
+        <div class="foundContent actualContent"></div>
+        <p class="error"></p>
+    </div>
+
+
+    <div class="notify">
+        <h5>Item Added!</h5>
+    </div>
+
+
+
+    <footer>
+
+        <div class="wrapper">
+    
+        <div class="address">
+            <div class="locate">
+                <h4 id="location"><i class="fas fa-search-location"></i>Location</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940440016215!2d38.80758761410425!3d8.885129893673739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2zQWRkaXMgQWJhYmEgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSBVbml2ZXJzaXR5IC0g4Yqg4Yuy4Yi1IOGKoOGJoOGJoyDhiLPhi63hipXhiLXhipMg4Ym04Yqt4YqW4YiO4YyCIOGLqeGKkuGJqOGIreGIsuGJsg!5e0!3m2!1sen!2set!4v1642398103930!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    
+            <div class="getinfo">
+                <h4 id="info"><i class="fas fa-people-arrows"></i>Get to Know Us</h4>
+                <ul class="know">
+                    <a href="#">About Us</a> 
+                    <li>Employees</li>
+                    <li>Investors</li>
+                    <li>Developers</li>
+                </ul>
+           </div>
+    
+        </div>
+        
+        <div class="email">
+            <div class="userinputs">
+                  <input type="text" placeholder="Your Name" name="" id="NameSend">
+                <input type="email" name="" placeholder="Your Email" id="EmailSend">
+            </div>
+            <textarea name="" id="" cols="50" placeholder="Write Your Comment" rows="10"></textarea>
+            <input type="submit" value="Send Email" onclick="sendMail();return false" id="myText" class="btn">
+        </div>
+    
+        <div class="termSocial">
+            <div class="social">
+                <img src="./Resources/images/facebook-new.png" alt="facebook logo" id="fb"  width =30px>
+                <img src="./Resources/images/twitter new.png" alt="twitter logo" id="twitter"  width= 30px>
+                <img src="./Resources/images/instagram-new.png" alt="instagram logo" id="insta"  width= 30px>
+                <img src="./Resources/images/telegram-app--v1.png" alt="telegram logo" id="tg" width= 30px>
+           </div>
+    
+        <div class="term">
+            <div class="items">
+                <p> Term and Privacy Policy </p>
+                <p> &copy 2021 AASTU GEBETA  </p>
+            </div>
+        </div>
+        
+    
+    </div>
+    <div id="google_translate_element" class="Language"></div>
+            <div class="backToTop">
+               <a href="#"> <i class="fas fa-arrow-alt-circle-up"></i></a>
+            </div>
+    
+            </div>
+       </footer>     
+    
+
+
+</div>
+
+
+<script src="./assets/js/food.js"></script>
+<script src="./assets/js/modal.js"></script>
+<script src="./assets/js/ham.js"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="./assets/js/translate.js"></script>
+
+
+</body>
+</html>

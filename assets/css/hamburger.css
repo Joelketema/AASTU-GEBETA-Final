@@ -1,0 +1,64 @@
+
+@media (min-width:100px) and (max-width:990px)
+{
+    .navigation
+    {
+        position: fixed;
+        display: flex;
+        background-color: #377fad;
+        width: 100vh;
+        height: 100vh;
+        padding: 20px 0;
+        flex-direction: column;
+        width: 100%;
+        margin-top:-3%;
+        clip-path: circle(50px at 90% -10%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+       
+    }
+
+    .navigation.open
+    {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .ham
+    {
+        z-index: 2;
+    }
+
+    .navigation ul 
+    {
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    .navigation ul li
+    {
+        padding: 15px 0;
+    }
+    .navigation a
+    {
+        color: white;
+    }
+
+    .navigation .lounges
+    {
+        display: none;
+    }
+
+    .fa-home,.fa-hamburger,.fa-warehouse,.fa-question-circle
+    {
+        margin-right: 10px;
+
+    }
+
+
+   
+
+    
+}

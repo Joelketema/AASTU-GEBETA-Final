@@ -1,0 +1,17 @@
+
+.featureTitle
+{
+    transform: translateX(-1000px);
+    transition: all 1500ms ease;
+}
+
+.sectionOne
+{
+    transform: translateX(-1000px);
+    transition: all 2500ms ease;
+}
+
+.featureTitle.appear, .sectionOne.appear
+{
+    transform: translateX(0px);
+}

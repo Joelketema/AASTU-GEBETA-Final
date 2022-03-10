@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+@media(min-width:100px)
+{
+    form
+    {
+      
+        width: 85%;
+        padding: 15px;
+        margin-top: 10%;
+        margin-left: 7%;
+        border-radius: 15px;
+     
+    }
+
+    .dasherForm
+    {
+        font-size: larger;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 18px;
+    }
+    input
+    {
+        border: 0;
+    }
+    input:focus{
+        outline: none;
+    }
+
+    .input1,.input2,.input3,.input6
+    {
+        border: 1.5px solid black;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .input7 input
+    {
+        border: 1.5px solid black;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .input4,.input5
+    {
+        margin-bottom: 15px;
+    }
+
+    .fa-male,.fa-female,#genderInput2
+    {
+        margin-left: 7px;
+    }
+
+    #remove
+    {
+        margin-top: 10px;
+    }
+    .btn
+    {
+        margin-left: 50px;
+    }
+
+    #description
+    {
+        border: 1.5px solid black;
+        border-radius: 8px;
+        font-family: poppins;
+        width: 100%;
+
+    }
+
+
+    .rst
+    {
+        display: flex;
+        position: relative;
+        margin-left: -20%;
+    
+    }
+
+  
+}
+
+@media(min-width:700px)
+
+{
+    form
+    {
+        
+        width: 40%;
+        margin-top:10%;
+        margin-left: 30%;
+
+
+    }
+
+    .rst{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .btn
+    {
+      width: 30%;   
+    }
+
+}

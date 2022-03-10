@@ -1,0 +1,216 @@
+[{
+    "Catagory":"Food",
+    "Name":"Beyaynet",
+    "Image":"../../Resources/images/Foods/Kibnesh/Traditional/eth2.jpg",
+    "Price":"25",
+    "Lounge":"Kibnesh",
+    "Type":"Traditional",
+    "About":"Ethiopian mixed food that contains multiple small portions of various tasty ethiopian food"
+},
+{
+    "Catagory":"Food",
+    "Name":"Siga Firfir",
+    "Image":"../../Resources/images/Foods/Kibnesh/Traditional/meat firfir.png",
+    "Price":"30",
+    "Lounge":"Kibnesh",
+    "Type":"Traditional",
+    "About":"Ethiopian injera with meat"
+},
+{
+    "Catagory":"Food",
+    "Name":"Shiro",
+    "Image":"../../Resources/images/Foods/Kibnesh/Traditional/shiro.png",
+    "Price":"25",
+    "Lounge":"Kibnesh",
+    "Type":"Traditional",
+    "About":"Special ethiopian spicy wot"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Pasta With Meat",
+    "Image":"../../Resources/images/Foods/Kibnesh/Fast/pasta besega.png",
+    "Price":"28",
+    "Lounge":"Kibnesh",
+    "Type":"Fast",
+    "About":"Pasta mixed with meat"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Pasta With Vegitable",
+    "Image":"../../Resources/images/Foods/Kibnesh/Fast/pasta vegitable.png",
+    "Price":"25",
+    "Lounge":"Kibnesh",
+    "Type":"Fast",
+    "About":"Pasta mixed with various vergitables"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Special Firfir",
+    "Image":"../../Resources/images/Foods/Memihran/Traditional/Special.jfif",
+    "Price":"30",
+    "Lounge":"Memihran",
+    "Type":"Traditional",
+    "About":"Injera Firfir With Boiled Egg"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Siga Wot",
+    "Image":"../../Resources/images/Foods/Memihran/Traditional/siga wot.jfif",
+    "Price":"30",
+    "Lounge":"Memihran",
+    "Type":"Traditional",
+    "About":"Ethiopian wot with meat"
+},
+
+
+
+
+{
+    "Catagory":"Food",
+    "Name":"Minchet",
+    "Image":"../../Resources/images/Foods/A+/Traditional/minchet.jfif",
+    "Price":"35",
+    "Lounge":"A+",
+    "Type":"Traditional",
+    "About":"Mutton with Boiled Egg"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Fool",
+    "Image":"../../Resources/images/Foods/A+/Traditional/fool.jfif",
+    "Price":"23",
+    "Lounge":"A+",
+    "Type":"Traditional",
+    "About":"Mashed Beans with tomato"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Misir Wot",
+    "Image":"../../Resources/images/Foods/A+/Traditional/misir wot.jfif",
+    "Price":"28",
+    "Lounge":"A+",
+    "Type":"Traditional",
+    "About":"Misir wot with injera"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Pasta with tomato sauce from KK",
+    "Image":"../../Resources/images/Foods/KK1/Fast/pasta2.jfif",
+    "Price":"25",
+    "Lounge":"KK",
+    "Type":"Fast",
+    "About":"Pasta with tomato sauce"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Rice",
+    "Image":"../../Resources/images/Foods/KK1/Fast/rice.jfif",
+    "Price":"25",
+    "Lounge":"KK",
+    "Type":"Fast",
+    "About":"Rice with tomato sauce"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Kik Alicha",
+    "Image":"../../Resources/images/Foods/Serategnoch/Traditional/kik alicha.jfif",
+    "Price":"25",
+    "Lounge":"Serategnoch",
+    "Type":"Traditonal",
+    "About":"Rice with tomato sauce"
+},
+
+{
+    "Catagory":"Food",
+    "Name":"Special Egg",
+    "Image":"../../Resources/images/Foods/Serategnoch/Traditional/egg.jfif",
+    "Price":"25",
+    "Lounge":"Serategnoch",
+    "Type":"Traditonal",
+    "About":"Special Egg with Tomato"
+},
+
+
+{
+    "Catagory":"Drink",
+    "Name":"Coca Cola",
+    "Image":"../../Resources/images/Drinks/Soft/coca cola.png",
+    "Price":"25",
+    "Lounge":"KK",
+    "Type":"Soft",
+    "About":"Coco cola soft drink"
+},
+
+{
+    "Catagory":"Drink",
+    "Name":"Water",
+    "Image":"../../Resources/images/Drinks/Soft/water.png",
+    "Price":"15",
+    "Lounge":"KK",
+    "Type":"Soft",
+    "About":"Bottled Pure water"
+},
+
+{
+    "Catagory":"Drink",
+    "Name":"Mirinda",
+    "Image":"../../Resources/images/Drinks/Soft/mirinda.jfif",
+    "Price":"30",
+    "Lounge":"KK",
+    "Type":"Soft",
+    "About":"Mirinda Soft Drink"
+},
+
+{
+    "Catagory":"Drink",
+    "Name":"Sprite",
+    "Image":"../../Resources/images/Drinks/Soft/sprite.jfif",
+    "Price":"25",
+    "Lounge":"KK",
+    "Type":"Soft",
+    "About":"Sprite Soft Drink"
+},
+
+{
+    "Catagory":"Drink",
+    "Name":"Pepsi",
+    "Image":"../../Resources/images/Drinks/Soft/pepsi.jfif",
+    "Price":"25",
+    "Lounge":"KK",
+    "Type":"Soft",
+    "About":"Pepsi Soft Drink"
+},
+
+{
+    "Catagory":"Drink",
+    "Name":"Ambo",
+    "Image":"../../Resources/images/Drinks/Soft/ambo.jfif",
+    "Price":"20",
+    "Lounge":"KK",
+    "Type":"Soft",
+    "About":"Ambo Flavor Drink"
+},
+
+
+
+{
+    "Catagory":"Drink",
+    "Name":"Predator",
+    "Image":"../../Resources/images/Drinks/Energy/Predator.jpg",
+    "Price":"30",
+    "Lounge":"KK",
+    "Type":"Energy",
+    "About":"Predator Energy Drink"
+}
+
+
+]
